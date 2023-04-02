@@ -2,12 +2,17 @@ body {
   background-color: wheat;
 }
 p {
-  font-size: large;
+  font-size: 25px;
 }
 .titulo {
   border: 2px solid black;
   padding: 10px;
   display: inline-block;
+  border-radius: 10px;
+  background-image: url("/img/BackGroundTitlepng.png");
+  background-size: 100% 100%;
+  color: black;
+  text-shadow: 1px 2px white;
 }
 .en {
   color: #333;
@@ -15,4 +20,16 @@ p {
 .check {
   position: relative;
   width: 50px;
+}
+.resumenImg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border: 5px solid black;
+  border-radius: 15px;
+}
+ul {
+  font-size: 24px;
+  text-decoration: underline;
 }
