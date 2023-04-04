@@ -1,12 +1,6 @@
-var check = document.querySelector(".check");
-check.addEventListener("click", idioma);
+var btnEn = document.getElementById("btn-en");
 
-function idioma() {
-  //>console.log(check.checked);
-  let id = check.checked;
-  if (id == true) {
-    location.href = "/en/index.html";
-  } else {
-    location.href = "/js/index.html";
-  }
-}
+btnEn.onclick = function () {
+  console.log("esto es un click");
+  window.location.href = "../en/index.html";
+};
