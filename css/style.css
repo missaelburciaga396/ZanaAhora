@@ -73,7 +73,7 @@ ul {
   -webkit-text-stroke: 1px black;
 }
 .sidebar {
-  background-color: #ffffff;
+  background: linear-gradient(to bottom, white, orange);
   height: 100%;
   position: fixed;
   width: 200px;
