@@ -79,6 +79,11 @@
   padding: 20px;
   margin-right: 200px;
 }
+.main-content p {
+  font-size: 20px;
+  margin-left: 2px;
+  margin-right: 50px;
+}
 body {
   background: linear-gradient(to bottom, #8de3ff, #b6f3d5);
 }

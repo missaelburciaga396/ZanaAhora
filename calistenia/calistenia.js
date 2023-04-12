@@ -10,7 +10,13 @@ function calcularIMC() {
   }
 
   var imc = peso / (altura * altura);
+  var pesoMax = 25 * (altura * altura);
 
   var resultadoLabel = document.getElementById("resultado");
-  resultadoLabel.innerHTML = "su indice de masa corporal es: " + imc.toFixed(2);
+  resultadoLabel.innerHTML =
+    "su indice de masa corporal es: " +
+    imc.toFixed(2) +
+    " su máximo potencial es: " +
+    pesoMax.toFixed(2) +
+    "kg";
 }
