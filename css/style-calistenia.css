@@ -61,6 +61,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 20px;
+  text-decoration: underline;
 }
 .sidebar li a {
   display: block;
@@ -79,4 +81,29 @@
 }
 body {
   background: linear-gradient(to bottom, #8de3ff, #b6f3d5);
+}
+#imc-table {
+  margin-top: 20px;
+}
+
+#imc-table h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#imc-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#imc-table th,
+#imc-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+#imc-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
 }

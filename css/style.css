@@ -31,10 +31,6 @@ p {
   border: 5px solid black;
   border-radius: 15px;
 }
-ul {
-  font-size: 24px;
-  text-decoration: underline;
-}
 .button-pointing {
   cursor: pointer;
 }
@@ -85,6 +81,8 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 20px;
+  text-decoration: underline;
 }
 .sidebar li a {
   display: block;
