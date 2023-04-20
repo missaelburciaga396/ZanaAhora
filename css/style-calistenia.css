@@ -2,15 +2,15 @@
   color: white;
   border: 2px solid black;
   background-image: url("/img/calistenia-dosWebTitle.jpg");
-  padding: 10px 200px;
-  display: inline-block;
+  padding: 10px;
   margin: 0 auto;
   border-radius: 10px;
-  background-size: 100% 100%;
+  background-size: cover;
   text-align: center;
   -webkit-text-stroke: #000 1px;
 }
-#btn-en {
+#btn-encalistenia {
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
@@ -26,7 +26,8 @@
   font-size: large;
   font-weight: bold;
 }
-#btn-es {
+#esCalistenia {
+  cursor: pointer;
   position: absolute;
   background-image: url(/img/imgBtn-esMx.jpg);
   background-size: cover;
@@ -44,18 +45,20 @@
   text-align: center;
   -webkit-text-stroke: 1px black;
 }
+
 .sidebar {
   background: linear-gradient(
     to bottom,
     rgb(172, 249, 195),
     rgb(240, 253, 240)
   );
-  height: 100%;
   position: fixed;
-  width: 200px;
   z-index: 1;
   overflow: auto;
   padding-top: 20px;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
 }
 .sidebar ul {
   list-style: none;
@@ -75,9 +78,7 @@
   color: #fff;
 }
 .main-content {
-  margin-left: 200px;
   padding: 20px;
-  margin-right: 200px;
 }
 .main-content p {
   font-size: 20px;
@@ -111,4 +112,38 @@ body {
 #imc-table th {
   background-color: #f2f2f2;
   font-weight: bold;
+}
+@media only screen and (min-width: 600px) {
+  .title {
+    padding: 10px 200px;
+  }
+  .main-content {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .sidebar {
+    width: 300px;
+  }
+  .title {
+    padding: 10px 300px;
+  }
+  .main-content {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    width: 400px;
+  }
+  .title {
+    padding: 10px 400px;
+  }
+  .main-content {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
 }

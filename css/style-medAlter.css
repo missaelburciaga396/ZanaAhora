@@ -1,38 +1,14 @@
-body {
-  background-color: wheat;
-}
-p {
-  font-size: 25px;
-}
-.titulo {
+.title {
+  color: white;
   border: 2px solid black;
-  padding: 10px;
+  background-image: url("/img/calistenia-4.jpg");
+  padding: 10px 200px;
   display: inline-block;
   margin: 0 auto;
   border-radius: 10px;
-  background-image: url("/img/BackGroundTitlepng.png");
   background-size: 100% 100%;
-  color: black;
-  text-shadow: 1px 2px white;
-  margin-top: 10px;
-}
-.en {
-  color: #333;
-}
-.check {
-  position: relative;
-  width: 50px;
-}
-.resumenImg {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
-  border: 5px solid black;
-  border-radius: 15px;
-}
-.button-pointing {
-  cursor: pointer;
+  text-align: center;
+  -webkit-text-stroke: #000 1px;
 }
 #btn-en {
   position: absolute;
@@ -69,7 +45,7 @@ p {
   -webkit-text-stroke: 1px black;
 }
 .sidebar {
-  background: linear-gradient(to bottom, white, orange);
+  background-image: url(/img/medecinaAlterImg/flowerpng.png);
   height: 100%;
   position: fixed;
   width: 200px;
@@ -100,13 +76,38 @@ p {
   margin-right: 200px;
 }
 .main-content p {
-  margin-left: 2px;
-  padding: 20px;
-  margin-right: 50px;
   font-size: 20px;
+  margin-left: 2px;
+  margin-right: 50px;
+}
+body {
+  background: linear-gradient(to bottom, #65fa99, #fdfffe);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
 }
 
-.resumenImg {
-  font-size: 24px;
-  padding: 15px;
+.button-pointing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+}
+
+.select-container {
+  margin-left: 10px;
+}
+
+select {
+  margin-top: 70px;
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
 }

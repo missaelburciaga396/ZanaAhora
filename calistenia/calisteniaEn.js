@@ -1,3 +1,9 @@
+var btnesCalistenia = document.getElementById("esCalistenia");
+
+btnesCalistenia.onclick = function () {
+  window.location.href = "index.html";
+};
+
 function calcularIMC() {
   var peso = parseFloat(document.getElementById("peso").value);
   var altura = parseFloat(document.getElementById("altura").value);
@@ -5,7 +11,7 @@ function calcularIMC() {
   if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
     var resultadoLabel = document.getElementById("resultado");
     resultadoLabel.innerHTML =
-      "Por favor, ingrese valores válidos de peso y altura";
+      "Please enter valid values for weight and height.";
     return;
   }
 
@@ -14,26 +20,20 @@ function calcularIMC() {
   var resultado_peso;
 
   if (imc <= 18.4) {
-    resultado_peso = "su peso está bajo";
+    resultado_peso = "your weight is low";
   } else if (imc >= 18.5 && imc <= 24.99) {
-    resultado_peso = "su peso es normal";
+    resultado_peso = "your weight is normal";
   } else if (imc >= 25 && imc <= 29.9) {
-    resultado_peso = "usted tiene sobrepeso";
+    resultado_peso = "you are overweight";
   } else if (imc >= 30) {
-    resultado_peso = "usted tiene obesidad";
+    resultado_peso = "you are obese";
   }
   var resultadoLabel = document.getElementById("resultado");
   resultadoLabel.innerHTML =
-    "su indice de masa corporal es: " +
+    "your body mass index is: " +
     imc.toFixed(2) +
-    " su máximo potencial es: " +
+    " your maximum potential is: " +
     pesoMax.toFixed(2) +
     "kg " +
     resultado_peso;
 }
-
-var btnEncalistenia = document.getElementById("btn-encalistenia");
-
-btnEncalistenia.onclick = function () {
-  window.location.href = "indexEnCalistenia.html";
-};
